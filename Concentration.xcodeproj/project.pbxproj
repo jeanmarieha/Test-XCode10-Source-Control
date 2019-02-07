@@ -13,6 +13,9 @@
 		DA80CDAE2204805F0081A4DD /* Concentration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA80CDAC2204805F0081A4DD /* Concentration.xcdatamodeld */; };
 		DA80CDB0220480600081A4DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA80CDAF220480600081A4DD /* Assets.xcassets */; };
 		DA80CDB3220480600081A4DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA80CDB1220480600081A4DD /* LaunchScreen.storyboard */; };
+		DACC72B2220C5E8B00F18466 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC72B1220C5E8B00F18466 /* Card.swift */; };
+		DACC72B4220C5EAC00F18466 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC72B3220C5EAC00F18466 /* Concentration.swift */; };
+		DACC72B6220C62A300F18466 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC72B5220C62A300F18466 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DA80CDAF220480600081A4DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA80CDB2220480600081A4DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA80CDB4220480600081A4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACC72B1220C5E8B00F18466 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DACC72B3220C5EAC00F18466 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		DACC72B5220C62A300F18466 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		DA80CDA42204805F0081A4DD /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				DA80CDA52204805F0081A4DD /* AppDelegate.swift */,
-				DA80CDA72204805F0081A4DD /* ViewController.swift */,
-				DA80CDA92204805F0081A4DD /* Main.storyboard */,
-				DA80CDAF220480600081A4DD /* Assets.xcassets */,
-				DA80CDB1220480600081A4DD /* LaunchScreen.storyboard */,
 				DA80CDB4220480600081A4DD /* Info.plist */,
 				DA80CDAC2204805F0081A4DD /* Concentration.xcdatamodeld */,
+				DACC72B9220C7DCA00F18466 /* View */,
+				DACC72B8220C7DC300F18466 /* Model */,
+				DACC72B7220C7DB800F18466 /* Control */,
+				DABE3B0C2204D7580054D537 /* Supporting Files */,
 			);
 			path = Concentration;
+			sourceTree = "<group>";
+		};
+		DABE3B0C2204D7580054D537 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA80CDA52204805F0081A4DD /* AppDelegate.swift */,
+				DA80CDAF220480600081A4DD /* Assets.xcassets */,
+				DA80CDB1220480600081A4DD /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DACC72B7220C7DB800F18466 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				DA80CDA72204805F0081A4DD /* ViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		DACC72B8220C7DC300F18466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DACC72B5220C62A300F18466 /* Theme.swift */,
+				DACC72B1220C5E8B00F18466 /* Card.swift */,
+				DACC72B3220C5EAC00F18466 /* Concentration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DACC72B9220C7DCA00F18466 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA80CDA92204805F0081A4DD /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA80CDA82204805F0081A4DD /* ViewController.swift in Sources */,
+				DACC72B4220C5EAC00F18466 /* Concentration.swift in Sources */,
 				DA80CDAE2204805F0081A4DD /* Concentration.xcdatamodeld in Sources */,
+				DACC72B6220C62A300F18466 /* Theme.swift in Sources */,
 				DA80CDA62204805F0081A4DD /* AppDelegate.swift in Sources */,
+				DACC72B2220C5E8B00F18466 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
